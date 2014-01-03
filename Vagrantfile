@@ -23,7 +23,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.define "nimbus" do |nimbus|
     nimbus.vm.network "private_network", ip: "192.168.99.3"
-    nimbus.vm.network "forwarded_port", guest: 8080, host: 8080
+    nimbus.vm.network "forwarded_port", guest: 8080, host: 1234
     nimbus.vm.box = "precise64"
     nimbus.vm.provision "shell", path: "nimbus-provisioning.sh"
     nimbus.vm.hostname = "nimbus"
