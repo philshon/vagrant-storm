@@ -36,3 +36,4 @@ supervisor.slots.ports:
 EOL
 
 nohup sudo /opt/storm-0.9.0.1/bin/storm supervisor &
+nohup sudo /opt/storm-0.9.0.1/bin/storm logviewer &
